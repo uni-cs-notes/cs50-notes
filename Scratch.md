@@ -63,7 +63,54 @@ information in binary which use to be reconized by the computer
 * `Programming Notation` 
 * In programming, hexadecimal numbers are often denoted with a prefix, such as `0x` for the C programming language.
 
-# ASCII
+# Computational Thinking
+*Essentially, computer programming is about taking some input and creating some output - thus solving a problem. What happens in between the input and output, what we could call a black box, is the focus of this course.
+```mermaid
+     flowchart LR
+     A[input] --> B[processing] --> C[output] 
+```
+*For example, we may need to take attendance for a class. We could use a system called unary to count, one finger at a time. Computers today count using a system called binary. It’s from the term binary digit that we get a familiar term called bit. A bit is a zero or one.
+* Computers only speak in terms of zeros and ones. Zeros represent off. Ones represent on. Computers are millions, and perhaps billions, of transistors that are being turned on and off.
+* If you imagine using a light bulb, a single bulb can only count from zero to one.
+* However, if you were to have three light bulbs, there are more options open to you!
+* Using three light bulbs, the following could represent zero:
+```
+  0 0 0
+```
+* Similarly, the following would represent one:
+```
+  0 0 1
+```
+* By this logic, we could propose that the following equals two:
+```
+  0 1 0
+```
+* Extending this logic further, the following represents three:
+```
+  0 1 1
+```
+* Four would appear as:
+```
+  1 0 0
+```
+* We could, in fact, using only three light bulbs count as high as seven!
+```
+  1 1 1
+```
+* As a heuristic, we could imagine that the following values represent each possible place in our binary digit:
+```
+  4 2 1
+```
+* Computers use ‘base-2’ to count. This can be pictured as follows:
+```
+  2^2  2^1  2^0
+  4    2    1
+```
+* Therefore, you could say that it would require three bits (the four’s place, the two’s place, and the one’s place) to represent a number as high as seven.
+
+* Computers generally use eight bits to represent a number. For example,` 00000101` is the number `5 in binary`.
+  
+# ASCII / Text
 * `Full Name`
 * American Standard Code for Information Interchange
 * `Purpose`
@@ -80,6 +127,21 @@ information in binary which use to be reconized by the computer
   H   I   !
   72  73  33
 ```
+# RGB
+* Red, green, and blue (called RGB) is a combination of three numbers.
+
+* Taking our previously used 72, 73, and 33, which said HI! via text, would be interpreted by image readers as a light shade of yellow. The red value would be 72, the green value would be 73, and the blue would be 33.
+
+## Images, Video and Sound
+* Images are simply collections of RGB values.
+* Videos are sequences of many images that are stored together, just like a flipbook.
+* Music can be represented through MIDI data.
+
+# Algorithms
+* Problem-solving is central to computer science and computer programming.
+* Imagine the basic problem of trying to locate a single name in a phone book.
+* How might you go about this?
+* One approach could be to simply read from page one to the next to the next until reaching the last page.
 
 # Pseudocode and the Basic Building Blocks of Programming
 * The ability to create pseudocode is central to one’s success in both this class and in computer programming.
@@ -100,6 +162,8 @@ information in binary which use to be reconized by the computer
   12 Else
   13     Quit
 ```
+#### Another approach could be to search two pages at a time.
+* A final and perhaps better approach could be to go to the middle of the phone book and ask, “Is the name I am looking for to the left or to the right?” Then, repeat this process, cutting the problem in half and half and half.
 * Pseudocoding is such an important skill for at least two reasons. First, when you pseudocode before you create formal code, it allows you to think through the logic of your problem in advance.
 * Second, when you pseudocode, you can later provide this information to others that are seeking to understand your coding decisions and how your code works.
 * Notice that the language within our pseudocode has some unique features. First, some of these lines begin with verbs like pick up, open, look at. Later, we will call these functions.
