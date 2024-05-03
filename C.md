@@ -8,7 +8,7 @@
 * VARAIBLES
 * LOOPS
 * FUNCTIONS COMPOSITIONS
-* Mario game 
+ 
    
 # Hello World 
 * to write the 1st program we will make a simple print of `HELLO WORLD`>
@@ -72,7 +72,7 @@ int main(void)
 ## Types refer to the possible data that can be stored within a variable.
 * For example, a char is designed to accommodate a single character like a or 2.
 * Types are very important because each type has specific limits.
-* For example, because of the limits in memory, the highest value of an int can be 4294967296.
+* For example, because of the limits in memory, the highest value of an int can be 4294967296. also known as [intergers overflow](/intergers overflow.md) 
 
  ### Types with which you might interact during this course include:
 
