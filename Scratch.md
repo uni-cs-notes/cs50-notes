@@ -64,12 +64,12 @@ information in binary which use to be reconized by the computer
 * In programming, hexadecimal numbers are often denoted with a prefix, such as `0x` for the C programming language.
 
 # Computational Thinking
-*Essentially, computer programming is about taking some input and creating some output - thus solving a problem. What happens in between the input and output, what we could call a black box, is the focus of this course.
+Essentially, computer programming is about taking some input and creating some output - thus solving a problem. What happens in between the input and output, what we could call a black box, is the focus of this course.
 ```mermaid
      flowchart LR
      A[input] --> B[processing] --> C[output] 
 ```
-*For example, we may need to take attendance for a class. We could use a system called unary to count, one finger at a time. Computers today count using a system called binary. It’s from the term binary digit that we get a familiar term called bit. A bit is a zero or one.
+* `For example,` we may need to take attendance for a class. We could use a system called unary to count, one finger at a time. Computers today count using a system called binary. It’s from the term binary digit that we get a familiar term called bit. A bit is a zero or one.
 * Computers only speak in terms of zeros and ones. Zeros represent off. Ones represent on. Computers are millions, and perhaps billions, of transistors that are being turned on and off.
 * If you imagine using a light bulb, a single bulb can only count from zero to one.
 * However, if you were to have three light bulbs, there are more options open to you!
