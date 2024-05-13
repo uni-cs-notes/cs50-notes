@@ -1,4 +1,5 @@
 # week 1 > C <
+[C-practice](./Cpract.md)
 ## introduction to C langauage 
 
 ### BASED ON --->
