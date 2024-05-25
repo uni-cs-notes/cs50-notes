@@ -73,3 +73,148 @@ Else if 50 > doors[middle]
     Search doors[middle+1] through doors[n-1]
 ```
 * `Notice,` looking at this approximation of code, you can nearly imagine what this might look like in actual code.
+
+* It turns out that there are many different types of sort algorithms.
+* Selection sort is one such search algorithm.
+* The algorithm for selection sort in pseudocode is:
+```
+For i from 0 to n–1
+    Find smallest number between numbers[i] and numbers[n-1]
+    Swap smallest number with numbers[i]
+```
+* Consider the unsorted list as follows:
+```
+  5 2 7 4 1 6 3 0
+  ^
+```
+* Selection sort will begin by looking for the smallest number in the list and swap that number with our current position in the list. In this case, the zero is located and moved to our current position.
+```
+  0 | 2 7 4 1 6 3 5
+```
+* Now, our problem has gotten smaller since we know at least the beginning of our list is sorted. So we can repeat what we did, starting from the second number in the list:
+```
+  0 | 2 7 4 1 6 3 5
+      ^    
+```
+1 is the smallest number now, so we’ll swap it with the second number. We’ll repeat this again …
+```
+  0 1 | 7 4 2 6 3 5
+        ^     
+```
+… and again…
+```
+  0 1 2 | 4 7 6 3 5
+          ^
+```
+… and again…
+```
+  0 1 2 3 | 7 6 4 5
+            ^
+```
+… and again …
+```
+  0 1 2 3 4 | 6 7 5
+              ^
+```
+* and so on.
+* Bubble sort is another sorting algorithm that works by repeatedly swapping elements to “bubble” larger elements to the end.
+* The pseudocode for bubble sort is:
+```
+Repeat n-1 times
+For i from 0 to n–2
+    If numbers[i] and numbers[i+1] out of order
+        Swap them
+```
+* We’ll start with our unsorted list, but this time we’ll look at pairs of numbers and swap them if they are out of order:
+```
+5 2 7 4 1 6 3 0
+^ ^
+2 5 7 4 1 6 3 0
+  ^ ^
+2 5 7 4 1 6 3 0
+    ^ ^
+2 5 4 7 1 6 3 0
+      ^ ^
+2 5 4 1 7 6 3 0
+        ^ ^
+2 5 4 1 6 7 3 0
+          ^ ^
+2 5 4 1 6 3 7 0
+            ^ ^
+2 5 4 1 6 3 0 7
+```
+* Now, the highest number is all the way to the right, so we’ve improved our problem. We’ll repeat this again:
+```
+2 5 4 1 6 3 0 | 7
+^ ^
+2 5 4 1 6 3 0 | 7
+  ^ ^
+2 4 5 1 6 3 0 | 7
+    ^ ^
+2 4 1 5 6 3 0 | 7
+      ^ ^
+2 4 1 5 6 3 0 | 7
+        ^ ^
+2 4 1 5 3 6 0 | 7
+          ^ ^
+2 4 1 5 3 0 6 | 7
+```
+* Now the two biggest values are on the right. We’ll repeat again:
+```
+  2 4 1 5 3 0 | 6 7
+  ^ ^
+  2 4 1 5 3 0 | 6 7
+    ^ ^
+  2 1 4 5 3 0 | 6 7
+      ^ ^
+  2 1 4 5 3 0 | 6 7
+        ^ ^
+  2 1 4 3 5 0 | 6 7
+          ^ ^
+  2 1 4 3 0 5 | 6 7
+```
+ … and again …
+```
+  2 1 4 3 0 | 5 6 7
+  ^ ^
+  1 2 4 3 0 | 5 6 7
+    ^ ^
+  1 2 3 4 0 | 5 6 7
+      ^ ^
+  1 2 3 4 0 | 5 6 7
+        ^ ^
+  1 2 3 0 4 | 5 6 7
+```
+ … and again …
+```
+  1 2 3 0 | 4 5 6 7
+  ^ ^
+  1 2 3 0 | 4 5 6 7
+    ^ ^
+  1 2 3 0 | 4 5 6 7
+      ^ ^
+  1 2 0 3 | 4 5 6 7
+```
+… and again …
+```
+  1 2 0 | 3 4 5 6 7
+  ^ ^
+  1 2 0 | 3 4 5 6 7
+    ^ ^
+  1 0 2 | 3 4 5 6 7
+```
+ … and finally …
+```
+  1 0 | 2 3 4 5 6 7
+  ^ ^
+  0 1 | 2 3 4 5 6 7
+```
+* Notice that, as we go through our list, we know more and more of it becomes sorted, so we only need to look at the pairs of numbers that haven’t been sorted yet.
+* Analyzing selection sort, we made only seven comparisons. Representing this mathematically, where n represents the number of cases, it could be said that selection sort can be analyzed as:
+```
+  (n-1)+(n-2)+(n-3)+ ... + 1
+
+```
+
+You can visualize a comparison of these algorithms.
+https://www.cs.usfca.edu/~galles/visualization/ComparisonSort.html
