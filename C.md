@@ -1,5 +1,4 @@
 # week 1 > C <
-[C-practice](./Cpract.md)
 ## introduction to C langauage 
 
 ### BASED ON --->
@@ -54,9 +53,9 @@ int main(void)
 ```
 * We have taken string as a variables since its use for store data related to alphabets and words.
 * Here is the explanation
-* The get_string function is used to get a string from the user.
+* The `get_string` **function is used to get a string from the user**.
 * Then, the variable answer is passed to the printf function.
-* %s tells the printf function to prepare itself to receive a string.
+* `%s` tells the printf function to prepare itself to receive a string.
 * Answer is a special holding place we call a variable. answer is of type string and can hold any string within it.
 * There are many data types, such as int, bool, char, and many others.
 * You can run your program by typing ./hello. The program now asks for your name and then says hello with your name attached.
