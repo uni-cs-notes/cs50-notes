@@ -1,4 +1,4 @@
-# week 1  C 
+# week 1  
 ## introduction to C langauage 
 
 ### BASED ON --->
